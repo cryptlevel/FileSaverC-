@@ -18,13 +18,13 @@ public:
 		// ask the name
 		std::cout << "Enter the user name: " ;
 		// add the name to variable 'NameForFile'
-		std::cin >> NameForFile ;
+		std::getline(std::cin, NameForFile) ; // Change the code to 'getline' for make space problem fix
 
 		// declaring the variable for make the name using user input for file
 		std::string FileName = NameForFile + ".txt" ;
 
 		//showing the file name
-		std::cout << "File Name Will Be: " << FileName << "\n" ;
+		std::cout << "File Name Will Be: " << FileName ; // removed '\n' from the code
 
 		// this line is very important for file
 		// because of this line that programme get free from the first input line

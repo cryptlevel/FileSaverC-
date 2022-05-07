@@ -6,3 +6,7 @@
     ask the data need to be input
     created the file and input the data and closed the file.
 
+# make file name enter problem fix.
+    problem is when enter the space file just maked an closed.
+    put getline , and problem been fixed.
+    and remove '\n' from file name display line for stop to make empty line.
