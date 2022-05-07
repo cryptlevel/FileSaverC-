@@ -10,3 +10,7 @@
     problem is when enter the space file just maked an closed.
     put getline , and problem been fixed.
     and remove '\n' from file name display line for stop to make empty line.
+
+# trying to add asking the needed action from the user
+    first printing actions list.
+    add the first action making file work with the command.command = md

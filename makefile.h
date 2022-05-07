@@ -4,6 +4,12 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <conio.h>
+
+// declaring variable to get the input command for action
+std::string commandInput ;
+// make array for input action commands
+std::string commandInputArray[4] = {"md", "of", "rd", "wd"} ;
 
 // declaring the variable for taking name
 std::string NameForFile ;
@@ -15,8 +21,22 @@ std::string FileInputData ;
 class MakeFile{
 public:
 	void MakeFileInput(){
-		// ask the name
-		std::cout << "Enter the user name: " ;
+
+	std::cout << "Welcome!" << std::endl ;
+    std::cout << "Actions you can do here:" << "\n" <<
+                 "1. Make new file  --> 'md'" << "\n" <<
+                 "2. Open exist file--> 'of'" << "\n" <<
+                 "3. Read exist file--> 'rd'" << "\n" <<
+                 "4. Write into file--> 'wd'" << std::endl ;
+
+    std::cout << "Enter what you need to do: " ;
+    std::cin >> commandInput ;
+    std::cin.ignore();
+
+    // response to the input 'md'
+        if(commandInput==commandInputArray[0]){
+        // ask the name
+		std::cout << "Type the file name: " ;
 		// add the name to variable 'NameForFile'
 		std::getline(std::cin, NameForFile) ; // Change the code to 'getline' for make space problem fix
 
@@ -32,7 +52,7 @@ public:
 		std::cin.ignore();
 
 		// asking what need to be in the file
-		std::cout << "What you need to store in the file: " ;
+		std::cout << "Type all you need to store in the file: " ;
 		// store that data to variable
 		std::getline(std::cin, FileInputData) ;
 
@@ -45,6 +65,15 @@ public:
 		userfile.close() ;
 
 		std::cout << "File has been saved & closed." ;
+        }
+
+	/*
+        else if(commandInput==commandInputArray[1]){
+            std::cout<< "this is ok." ;
+        }
+
+	*/
+
 	}
 };
 
