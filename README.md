@@ -14,3 +14,10 @@
 # trying to add asking the needed action from the user
     first printing actions list.
     add the first action making file work with the command.command = md
+
+# Make confirm code for making file and it's name.
+    ask the user to confirm the file name.
+    coded if the answer is 'yes'.
+    made new class for asking the file name enter code.
+    make the loop to ask the name of file until it get 'yes' as a answer.
+    finished the asking the file name confirm code & making the file after the confirm.

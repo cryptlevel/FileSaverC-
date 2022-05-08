@@ -3,7 +3,7 @@
 #include <string>
 #include <conio.h>
 #include "makefile.h"
-using namespace std;
+using namespace std ;
 
 int main(){
     system("color f0") ;
